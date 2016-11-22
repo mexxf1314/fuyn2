@@ -103,9 +103,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controls\CategoryList.ascx" />
-    <Content Include="Image\p1.png" />
-    <Content Include="Image\p2.jpg" />
-    <Content Include="Image\p3.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -163,6 +160,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Image\" />
     <Folder Include="Pages\Admin\" />
     <Folder Include="Pages\Helpers\" />
     <Folder Include="Scripts\" />

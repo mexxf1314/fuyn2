@@ -3,6 +3,8 @@
     <%@ Import Namespace="System.Web.Routing" %>
 
     <asp:Content ContentPlaceHolderID="bodyContent" runat="server">
+        
+        <div style="width:100%;height:45em">
     <div id="content">
     <% foreach (SportsStore.Models.Product prod in GetProducts())
         {
@@ -10,6 +12,7 @@
             Response.Write(string.Format("<h3>{0}</h3>",prod.Name));
             Response.Write(prod.Description);
             Response.Write(string.Format("<h4>{0:c}</h4>", prod.Price));
+            Response.Write(string.Format("<button name='add'type='submit'" + "value='{0}'>Add to Cart</button>", prod.ProductID));
             Response.Write("</div>");
         } %>
     </div>
@@ -28,5 +31,8 @@
             }
            %>
     </div>
+          </div>
+        <p></p>
+        <div id="page1" style="width:100%; height:40em;background-color:#b200ff "></div>
     </asp:Content>
 

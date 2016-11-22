@@ -5,13 +5,14 @@ div#header div.title,div.item h3,div.item h4,div.pager a
 
 }
 div#header {
-    background-image: url('../Image/p1.png');
+    /*background-image: url('../Image/p1.png');*/
+    background-color:blueviolet;
     border-bottom: 2px solid #4cff00;
     color: blueviolet;
 }
 div#header div.title{font-size:3em;padding:.6em; }
-div#content {background-image: url('../Image/p2.jpg'); border-left:2px solid gray;margin-left:9em;padding:1em;}
-div#categories{ background-image: url('../Image/p3.jpg'); float:left;width:8em;padding:.4em; }
+div#content { border-left:2px solid gray;margin-left:9em;padding:1em;}
+div#categories{ float:left;width:8em;padding:.4em; }
 
 div.item{border-top:1px dotted gray;padding-top:.7em;margin-bottom:.7em;}
 div.item:first-child{border-top:none;padding-top:0;}
